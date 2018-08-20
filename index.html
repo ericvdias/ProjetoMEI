@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Gerenciamento de Clientes</title>
+	<link rel="icon" href="icone_editar.jpg" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<style type="text/css">
+	body {
+		background: #666666;
+	}
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%
+		vertical-align:	middle;
+	}
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: center;
+		padding: 5px;
+		background: white;
+	}
+	th {
+		font-weight: bold;
+		background-color: #0CB4CE;
+	}	
+	#acao {
+		text-align:center;
+	}
+	#menuSup{
+		border: 0px; width:100%; background-color: grey; text-align: right; color: white;
+	}
+
+</style>
+
+</head>
+<body>
+	
+	<div id = "menuSup" >
+		Usuário |
+		Clientes |
+		Produtos |
+		Vendas |
+		Relatórios
+	</div>
+</tr>
+</table>			
+<h1 style= "color: white; text-align:center;">
+
+	Cadastro de Clientes
+</h1>  		
+<div style= "text-align:center;">
+	<input>
+</input>
+
+<input type="button" id = "botaoBuscar" value = Buscar style = "cursor: pointer; background: #0CB4CE; color: white;" >
+
+
+</input>
+&nbsp &nbsp &nbsp &nbsp &nbsp
+<button id = "botaoNovoCliente" style = "cursor: pointer; background: #0CB4CE; color: white;">
+	Novo Cliente
+</button>
+</div>
+<p></p>
+
+
+<table id = "tabela" style = "width: 100%; margin-bottom: .10em; table-layout: fixed;" >
+	<thead>
+		<tr>
+			<th>Ação</th>
+			<th>Código</th>
+			<th>Nome</th>
+			<th>Telefone</th>
+			<th>CPF/CNPJ</th>
+			<th>Endereço</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td  id = "acao" > <a href="NovoCliente.html"><button type=button style = "background-color: blue; width: 10px; height: 15px; cursor: pointer;" title="Editar registro";>
+					
+			</button></a>
+			<button style = "background-color: red;width: 10px; height: 15px; cursor: pointer;" title="Excluir registro" >
+			</button>
+			</td>
+			<td> 10256 </td>
+			<td> Eric Villela </td>
+			<td> (67) 99259-9577 </td>
+			<td> 11122233344 </td>
+			<td> Rua Amelia Blabla, 201 </td>
+		</tr>
+	</tbody>
+
+</table>
+
+</body>
+
